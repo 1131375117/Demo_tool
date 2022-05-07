@@ -1,7 +1,5 @@
 package com.hua.tulingxueyuan.array;
 
-import cn.tulingxueyuan.sort.PrintArray;
-
 import java.util.Arrays;
 
 /**
