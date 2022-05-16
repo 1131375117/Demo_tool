@@ -2,6 +2,7 @@ package com.hua.tulingxueyuan.stackandqueue.DecodeString;
 
 import java.util.Collections;
 import java.util.LinkedList;
+import java.util.Stack;
 
 /**
  * @author ：Mark老师

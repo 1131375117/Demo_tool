@@ -22,7 +22,6 @@ public class CardDP {
                     dp[i][j]=dp[i-1][j];
                 }
             }
-
         }
         System.out.println(dp[n][m]);
 

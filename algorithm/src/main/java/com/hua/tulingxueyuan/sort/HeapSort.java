@@ -65,8 +65,6 @@ public class HeapSort {
         }
     }
 
-
-
     public static void main(String[] args) {
         PrintArray.print(PrintArray.SRC);
         System.out.println("============================================");
