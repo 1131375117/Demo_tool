@@ -1,4 +1,4 @@
-package com.hua.algorithm.sort;
+package com.hua.algorithm.sort.test;
 
 /**
  * 什么是快速排序？
@@ -41,8 +41,10 @@ public class QuickSort {
                 data[rr] = temp;
                 rr--;
             }
-            if (ll < rr) {
+            if(left<ll){
                 qSort(data, left, ll - 1);
+            }
+            if(ll<right){
                 qSort(data, ll + 1, right);
             }
 

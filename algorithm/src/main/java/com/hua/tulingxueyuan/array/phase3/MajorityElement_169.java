@@ -8,9 +8,13 @@ package com.hua.tulingxueyuan.array.phase3;
  * 你可以假设数组是非空的，并且给定的数组总是存在多数元素。
  */
 public class MajorityElement_169 {
+    public static void main(String[] args) {
+        int i = majorityElement(new int[]{1, 2,1,2, 1});
+        System.out.println(i);
+    }
 
     /*Boyer-Moore 投票算法*/
-    public int majorityElement(int[] nums) {
+    public  static int  majorityElement(int[] nums) {
         /*对拼消耗的数字*/
         int currentNum = nums[0];
         /*对拼消耗的数字个数*/
