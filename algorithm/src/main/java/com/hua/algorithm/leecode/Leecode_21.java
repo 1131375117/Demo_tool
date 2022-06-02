@@ -59,7 +59,7 @@ public class Leecode_21 {
         if (list2 != null) {
             p.next = list2;
         }
-        return p.next;
+        return result.next;
     }
 
 }

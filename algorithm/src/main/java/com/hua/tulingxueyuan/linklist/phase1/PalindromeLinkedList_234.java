@@ -1,8 +1,7 @@
 package com.hua.tulingxueyuan.linklist.phase1;
 
-import com.hua.tulingxueyuan.linklist.ListNode;
 
-;
+import com.hua.tulingxueyuan.linklist.ListNode;
 
 /**
  * @author ：Mark老师
@@ -11,7 +10,8 @@ import com.hua.tulingxueyuan.linklist.ListNode;
  * 如果是，返回 true ；否则，返回 false 。
  */
 public class PalindromeLinkedList_234 {
-    public boolean isPalindrome(ListNode head) {
+    public boolean isPalindrome(
+            ListNode head) {
         ListNode fast = head, slow = head;
         while (fast != null && fast.next != null) {
             fast = fast.next.next;

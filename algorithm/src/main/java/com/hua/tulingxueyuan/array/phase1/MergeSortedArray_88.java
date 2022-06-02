@@ -1,5 +1,4 @@
 package com.hua.tulingxueyuan.array.phase1;
-
 import java.util.Arrays;
 
 /**

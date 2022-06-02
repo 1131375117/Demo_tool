@@ -46,7 +46,7 @@ public class NextPermutation_31 {
     }
 
     public static void main(String[] args) {
-        int[] nums1  = {1,1};
+        int[] nums1  = {5,3,1,6,2,4};
         int[] nums2  = {1,2,3,4,5,6};
         new NextPermutation_31().nextPermutation(nums1);
     }

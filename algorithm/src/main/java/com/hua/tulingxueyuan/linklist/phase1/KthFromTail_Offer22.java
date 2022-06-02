@@ -1,5 +1,6 @@
 package com.hua.tulingxueyuan.linklist.phase1;
 
+
 import com.hua.tulingxueyuan.linklist.ListNode;
 
 /**

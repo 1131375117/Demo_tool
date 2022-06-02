@@ -1,8 +1,7 @@
 package com.hua.tulingxueyuan.linklist.phase1;
 
-import com.hua.tulingxueyuan.linklist.ListNode;
 
-;
+import com.hua.tulingxueyuan.linklist.ListNode;
 
 /**
  * @author ：Mark老师

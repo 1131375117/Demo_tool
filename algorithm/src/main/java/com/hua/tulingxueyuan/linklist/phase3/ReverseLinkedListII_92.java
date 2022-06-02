@@ -2,8 +2,6 @@ package com.hua.tulingxueyuan.linklist.phase3;
 
 import com.hua.tulingxueyuan.linklist.ListNode;
 
-;
-
 /**
  * @author ：Mark老师
  * @description ：(LeetCode-92) 反转链表 II
@@ -16,7 +14,8 @@ public class ReverseLinkedListII_92 {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode preNode = dummy;
-        /*将preNode移动left-1步*/
+        /*将preNode移动left-1步
+        *preNode的next就是反转的开始 */
         for(int i = 0; i<left-1; i++) preNode = preNode.next;
 
         /*要反转的链表结点就是preNode的下个结点*/

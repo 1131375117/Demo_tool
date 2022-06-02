@@ -10,9 +10,11 @@ public class Medianof2SortedArrays_4 {
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m = nums1.length, n = nums2.length;
-        /*将奇数个数和偶数个数情况统一处理
+        /*将数组元素个数总数为奇数和偶数情况统一处理
         * 奇数个数: left==right
-        * 偶数个数: left==right+1 */
+        * 偶数个数: right==left+1
+        * 比如 m=4,n=6,则left = 5,right = 6
+        * m=4,n=5,则left = 5,right = 5 */
         int left = (m + n + 1) / 2;
         int right = (m + n + 2) / 2;
         return (getkth(nums1, 0, nums2, 0, left)
@@ -20,7 +22,7 @@ public class Medianof2SortedArrays_4 {
     }
 
     public double getkth(int[] nums1, int nums1Start, int[] nums2, int nums2Start, int k) {
-        /*有任何一个数组空了，直接返回结果*/
+        /*有任何一个数组空了，直接返回另外一个非空数组的中位数结果*/
         if (nums1Start > nums1.length - 1)
             return nums2[nums2Start + k - 1];
         if (nums2Start > nums2.length - 1)
@@ -28,7 +30,6 @@ public class Medianof2SortedArrays_4 {
         /*找第1小的数字，所以只需判断两个数组中第一个数字哪个小就可以了*/
         if (k == 1)
             return Math.min(nums1[nums1Start], nums2[nums2Start]);
-
         /*获得两个数组中第k/2个元素的值*/
         int num1Mid = Integer.MAX_VALUE, num2Mid = Integer.MAX_VALUE;
         if (nums1Start + k/2 - 1 < nums1.length)
