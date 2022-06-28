@@ -5,7 +5,7 @@ import sun.misc.BASE64Decoder;
 /**
  * @author fuhua
  **/
-public class Base2pdf {
+/*public class Base2pdf {
 
   public static  Multipa  base64MultipartFile(String base64) {
         try {
@@ -23,4 +23,4 @@ public class Base2pdf {
             return;
         }
     }
-}
+}*/

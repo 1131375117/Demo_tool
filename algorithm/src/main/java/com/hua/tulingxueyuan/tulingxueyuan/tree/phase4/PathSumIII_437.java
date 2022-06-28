@@ -1,4 +1,5 @@
-package com.hua.tulingxueyuan.tree.phase4;
+package com.hua.tulingxueyuan.tulingxueyuan.tree.phase4;
+
 
 import com.hua.tulingxueyuan.tree.TreeNode;
 
@@ -13,7 +14,6 @@ import java.util.HashMap;
  * 但是路径方向必须是向下的（只能从父节点到子节点）。
  */
 public class PathSumIII_437 {
-
 
     public int pathSum(TreeNode root, int sum) {
         HashMap<Integer, Integer> prefixSum = new HashMap();
